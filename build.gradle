@@ -1,0 +1,15 @@
+plugins {
+  id "org.jetbrains.kotlin.jvm" version "1.4.10"
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+}
+
+test {
+  useJUnitPlatform()
+}
