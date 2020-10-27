@@ -16,7 +16,18 @@ class BottlesTest {
     val expected = """
       99 bottles of beer on the wall, 99 bottles of beer.
       Take one down and pass it around, 98 bottles of beer on the wall
+
     """.trimIndent()
     assertThat(unit.verse(99)).isEqualTo(expected)
+  }
+
+  @Test
+  fun another_verse() {
+    val expected = """
+      3 bottles of beer on the wall, 3 bottles of beer.
+      Take one down and pass it around, 2 bottles of beer on the wall
+
+    """.trimIndent()
+    assertThat(unit.verse(3)).isEqualTo(expected)
   }
 }
