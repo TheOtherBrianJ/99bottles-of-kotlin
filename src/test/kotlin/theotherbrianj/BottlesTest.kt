@@ -30,4 +30,14 @@ class BottlesTest {
     """.trimIndent()
     assertThat(unit.verse(3)).isEqualTo(expected)
   }
+
+  @Test
+  fun verse_2() {
+    val expected = """
+      2 bottles of beer on the wall, 2 bottles of beer.
+      Take one down and pass it around, 1 bottle of beer on the wall
+
+    """.trimIndent()
+    assertThat(unit.verse(2)).isEqualTo(expected)
+  }
 }
