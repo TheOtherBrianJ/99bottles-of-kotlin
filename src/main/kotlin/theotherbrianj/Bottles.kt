@@ -25,4 +25,6 @@ class Bottles {
   }
 
   fun verses(starting: Int, ending: Int) = starting.downTo(ending).joinToString("\n") { verse(it) }
+
+  fun song() = verses(99, 0)
 }
