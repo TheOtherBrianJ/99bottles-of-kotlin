@@ -60,4 +60,17 @@ class BottlesTest {
     """.trimIndent()
     assertThat(unit.verse(0)).isEqualTo(expected)
   }
+
+  @Test
+  fun couple_of_verses() {
+    val expected = """
+      99 bottles of beer on the wall, 99 bottles of beer.
+      Take one down and pass it around, 98 bottles of beer on the wall
+
+      98 bottles of beer on the wall, 98 bottles of beer.
+      Take one down and pass it around, 97 bottles of beer on the wall
+
+    """.trimIndent()
+    assertThat(unit.verses(99, 98)).isEqualTo(expected)
+  }
 }

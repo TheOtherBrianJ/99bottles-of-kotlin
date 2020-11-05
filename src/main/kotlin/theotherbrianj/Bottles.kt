@@ -23,4 +23,6 @@ class Bottles {
 
     """.trimIndent()
   }
+
+  fun verses(num1: Int, num2: Int) = listOf(verse(99), verse(98)).joinToString("\n")
 }
