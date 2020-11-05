@@ -87,6 +87,6 @@ class BottlesTest {
       Go to the store and buy some more, 99 bottles of beer on the wall
 
     """.trimIndent()
-    assertThat(unit.verses(2,0)).isEqualTo(expected)
+    assertThat(unit.verses(2, 0)).isEqualTo(expected)
   }
 }
